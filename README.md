@@ -1,6 +1,6 @@
 # Estudiante: Wilson Roberto Cerna Tello
 
-# Descripcion: Este projecto esta creado en dos clases " Clase7 y Motocicleta " cumpliendo con los constructores por defecto, parametrizado y sobrecarga.
+Descripcion: Este projecto esta creado en dos clases " Clase7 y Motocicleta " cumpliendo con los constructores por defecto, parametrizado y sobrecarga.
 La clase "Motocicleta" esta diseñada para representar con almenos dos atributos marca y modelo esta tambien incluye varios constructores, condicionale, y cadenas.
 En la compilacion de salida tenemos dos lineas por que tenemos un costructor de sobrecarga.
 
