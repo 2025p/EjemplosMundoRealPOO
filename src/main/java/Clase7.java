@@ -16,11 +16,16 @@ public class Clase7 {
         /* Random rand=new Random();
         rand.nextlnt();
         */
-        Motocicleta m1=new Motocicleta("Kawasaki", "H2R");
+        Motocicleta m1 = new Motocicleta("Kawasaki", "H2R");
         m1.acelerar();
+        m1.acelerar(200);
         
-         Motocicleta m2=new Motocicleta("SKU Ninja");
-         m1.acelerar(200);
+        System.out.println("---");
+        
+         Motocicleta m2 = new Motocicleta("Kawsaki Ninja");
+         m2.acelerar();
+         m2.acelerar(120);
+         
     }
     
 }
