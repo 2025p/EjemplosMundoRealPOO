@@ -4,7 +4,7 @@ Descripcion: Este projecto esta creado en dos clases " Clase7 y Motocicleta " cu
 La clase "Motocicleta" esta diseñada para representar con almenos dos atributos marca y modelo esta tambien incluye varios constructores, condicionale, y cadenas.
 En la compilacion de salida tenemos dos lineas por que tenemos un costructor de sobrecarga.
 
-*// aqui la muestra de ejecucioncion.
+// aqui la muestra de ejecucioncion.
 
 Creando una motocicletaKawasaki H2R.
 Tu ninjaKawasaki H2R esta acelerando.
