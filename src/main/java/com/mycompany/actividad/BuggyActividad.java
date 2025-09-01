@@ -3,7 +3,7 @@
  */
 
 package com.mycompany.actividad;
-
+// Se importo las bibliotecas
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -20,10 +20,10 @@ public class BuggyActividad {
         nombres.add("Sandra");
 
         // Error: índice fuera de rango
-        System.out.println("Elemento en posición 2: " + nombres.get(2));
+        System.out.println("Elemento en posición 2: " + nombres.get(2)); // correccion del # 3 porque el conteo es de cero
 
         // Error: comparación de cadenas con == en lugar de equals
-        String buscado = new String();
+        String buscado = new String();// aqui en las llaves se elimino el el nombre Ana 
         if (buscado.equals("Ana")) {
             System.out.println("Encontrado");
         }

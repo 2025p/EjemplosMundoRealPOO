@@ -4,6 +4,7 @@
  */
 package com.mycompany.actividad;
 
+//Se realiza importacion de bibliotecas
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
@@ -26,7 +27,7 @@ public class ClasesCorreccion {
             System.out.println("No se encontró el teléfono de Bea.");
         }
 
-        //  Corrección: SET de inscritos
+        //  Corrección: sobre el duplicado de Ana asi mismo como el numero 1
         Set<Alumno> inscritos = new HashSet<>();
         inscritos.add(new Alumno(1, "Ana"));
         inscritos.add(new Alumno(2, "Luis"));
