@@ -20,7 +20,7 @@ public class Alumno {
         return "Alumno{id=" + id + ", nombre='" + nombre + "'}";
     }
     
-    // ✅ Para que el Set funcione correctamente, se deben agregar estos dos métodos
+    //  Para que el Set funcione correctamente, se deben agregar estos dos métodos
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

@@ -26,7 +26,7 @@ public class ClasesCorreccion {
             System.out.println("No se encontró el teléfono de Bea.");
         }
 
-        // ✅ Corrección: SET de inscritos
+        //  Corrección: SET de inscritos
         Set<Alumno> inscritos = new HashSet<>();
         inscritos.add(new Alumno(1, "Ana"));
         inscritos.add(new Alumno(2, "Luis"));
