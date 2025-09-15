@@ -16,6 +16,7 @@ public class GestionDatos extends JFrame {
     private JTextField campoApellido;
     private JButton botonAgregar;
     private JButton botonLimpiar;
+    private JButton botonEliminar;
     private DefaultListModel<String> modeloLista;
     private JList<String> listaDatos;
 
@@ -48,9 +49,11 @@ public class GestionDatos extends JFrame {
         
         botonAgregar = new JButton("Agregar");
         botonLimpiar = new JButton("Limpiar");
+        botonEliminar = new JButton("Eliminar");
         
         panelBotones.add(botonAgregar);
         panelBotones.add(botonLimpiar);
+        panelBotones.add(botonEliminar);
 
         // --- Agregar paneles a la ventana principal ---
         add(panelEntrada, BorderLayout.NORTH);
@@ -71,6 +74,25 @@ public class GestionDatos extends JFrame {
                 limpiarCampos();
             }
         });
+        botonEliminar.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+        // Obtenemos el índice del elemento seleccionado en la lista
+            int selectedIndex = listaDatos.getSelectedIndex();
+        // Si hay un elemento seleccionado (el índice no es -1)
+            if (selectedIndex != -1) {
+            // Removemos el elemento del modelo de la lista
+            modeloLista.remove(selectedIndex);
+        }
+    }
+});
+
+// Opcional: Deshabilita el botón de eliminar si no hay selección
+        listaDatos.addListSelectionListener(e -> {
+            if (!e.getValueIsAdjusting()) {
+        botonEliminar.setEnabled(listaDatos.getSelectedIndex() != -1);
+    }
+});
     }
 
       // Método para agregar datos a la lista
