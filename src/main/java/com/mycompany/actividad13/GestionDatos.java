@@ -117,7 +117,7 @@ public class GestionDatos extends JFrame {
     }
 
     public static void main(String[] args) {
-        // Usar SwingUtilities.invokeLater para asegurar que la GUI se ejecute en el hilo de eventos de Swing
+       
         SwingUtilities.invokeLater(new Runnable() {
             @Override
             public void run() {
