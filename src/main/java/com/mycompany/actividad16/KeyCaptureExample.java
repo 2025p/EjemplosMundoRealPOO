@@ -8,22 +8,21 @@ import javax.swing.*;
 import java.awt.BorderLayout;
 import java.awt.event.ActionEvent;
 
-/**
- * Clase para demostrar la captura de la tecla 'C' en un JList usando Key Bindings.
- */
+//Un JList usando Key Bindings.
+
 public class KeyCaptureExample extends JFrame {
 
     private JList<String> itemList;
     private DefaultListModel<String> listModel;
 
     public KeyCaptureExample() {
-        // --- 1. Configuración de la Ventana ---
+        // Configuración de la Ventana 
         setTitle("Captura de Tecla 'C' ");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(400, 300);
         setLayout(new BorderLayout());
 
-        // --- 2. Creación de Componentes ---
+        // Componentes 
         listModel = new DefaultListModel<>();
         listModel.addElement("Elemento 1-0: Presiona 'C' para alternar selección");
         listModel.addElement("Elemento 2-1");
@@ -31,7 +30,7 @@ public class KeyCaptureExample extends JFrame {
         listModel.addElement("Elemento 4-3");
         
         itemList = new JList<>(listModel);
-        // Aseguramos que la JList sea focusable, aunque por defecto lo es.
+        
         itemList.setFocusable(true); 
 
         JButton dummyButton = new JButton("Key Bindings");
@@ -40,15 +39,15 @@ public class KeyCaptureExample extends JFrame {
         add(new JScrollPane(itemList), BorderLayout.CENTER);
         add(dummyButton, BorderLayout.SOUTH);
 
-        // --- 3. Implementación del Key Binding ---
+    
 
-        // Paso A: Definir el KeyStroke a capturar (Tecla 'C')
+        // Definir el KeyStroke a capturar (Tecla 'C')
         KeyStroke keyC = KeyStroke.getKeyStroke("C");
         
-        // Paso B: Definir el nombre de la acción
+        // Nombre de la acción
         String actionName = "alternarSeleccionC";
 
-        // Paso C: Crear la Acción
+        // Se Crea la Acción
         Action alternateSelectionAction = new AbstractAction() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -82,7 +81,7 @@ public class KeyCaptureExample extends JFrame {
                 }
         };
 
-        // Paso D: Vincular el KeyStroke con la Acción
+        // Vincular el KeyStroke con la Acción
         
         // Obtenemos el InputMap para la condición WHEN_FOCUSED
         // Esto significa que la acción se ejecutará solo cuando el JList tenga el foco.
@@ -101,7 +100,7 @@ public class KeyCaptureExample extends JFrame {
     }
 
     public static void main(String[] args) {
-        // Ejecutar la GUI en el Event Dispatch Thread (EDT)
+        
         SwingUtilities.invokeLater(() -> new KeyCaptureExample());
     }
 }
