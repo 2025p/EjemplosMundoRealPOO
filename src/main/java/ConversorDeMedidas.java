@@ -16,17 +16,17 @@ public class ConversorDeMedidas {
         // las opciones:
         // 1 pulgada equivale a 25.40 milimetros.
         // 1 yarda equivale a 0.91 metros.
-        // 1milla equivale a 1.60 kilometros
+        // 1 kilometro equivale a 0.62 millas.
    
          Scanner lector = new Scanner(System.in);
     
          int opc;
-         double pulgadas, milimetros, yardas, metros, millas, kilometros;
+         double pulgadas, milimetros, yardas, metros, kilometros, millas;
       
          System.out.println("Ingresse la opcion que desea:");
          System.out.println("1. Pulgadas a milimetros.");
          System.out.println("2. Yardas a metros.");
-         System.out.println("3. Millas a kilometros.");
+         System.out.println("3. kilometros a Millas.");
     
          opc = lector.nextInt();
          switch  (opc){
@@ -46,10 +46,10 @@ public class ConversorDeMedidas {
                  
 
              case 3:
-                 System.out.println("Ingrese  la cantidad de millasas a convertir:");
+                 System.out.println("Ingrese  la cantidad de kilometros a convertir:");
                  millas = lector. nextDouble();
-                 kilometros = millas * 1.60;
-                 System.out.println(millas+"millasas equivalen a "+kilometros+"kilometros");
+                 kilometros = millas * 0.62;
+                 System.out.println(millas+"Kilometro equivalen a "+Millas+"Millas");
                  break;
                  
              default:
